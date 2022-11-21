@@ -1,0 +1,7 @@
+[preload  storage="./data/bgimage/[5-1].jpg"  ]
+[preload  storage="./data/bgimage/[0-12].png"  ]
+[preload  storage="./data/bgimage/[0-41].jpg"  ]
+[preload  storage="./data/bgimage/[1-1].jpg"  ]
+[preload  storage="./data/bgimage/[4-1].jpg"  ]
+[preload  storage="./data/bgimage/[1-2].jpg"  ]
+[return]
