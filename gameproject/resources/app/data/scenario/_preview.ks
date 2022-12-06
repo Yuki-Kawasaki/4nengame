@@ -2,85 +2,53 @@
 
 [mask time=10]
 [mask_off time=10]
-[bg  time="1000"  method="crossfade"  storage="[0-41].jpg"  ]
-[l  ]
-[tb_show_message_window  ]
-[tb_start_text mode=1 ]
-#俺
-「まぶしいな...」[p]
-「もう朝かよ」[p]
-#
-明かりがまぶたを突き抜ける不快感で目が覚める。[p]
-ゆっくりと目を開けるとそこは...[p]
-[_tb_end_text]
+*mail_home
 
-[bg  time="1000"  method="crossfade"  storage="[1-1].jpg"  ]
-[tb_start_text mode=1 ]
-#俺
-「...どこだ、ここ？」[p]
-#
-そこは仕事の為に引っ越した簡素な寮とは違う、内装にこだわった部屋。[p]
-飲みすぎて知らない人の家にでも上がりこんだか。[p]
-#俺
-「？？？？」[p]
-#
-どうやらまだ寝ぼけているようだ。[p]
-上手く頭も回らない。[p]
-#俺
-「そうだ、今日って…」[p]
-#
-時間を確認しないといけない。[p]
-今日は取引先に行かないといけなかったはず。[p]
-流石に今回遅刻してしまうと俺の首が危ない。[p]
-#俺
-「あぁ、良かった。まだ6時半か。」[p]
-#
-時間を確認して安堵する。[p]
-しかし日付が違う。[p]
-#俺
-「2021年、6月1日？」[p]
-#
-確か今は2027年の9月のはず。[p]
-スマホが壊れたのか。[p]
-そんなことを考えていると、[p]
-ゆっくりとだが目の焦点があってきた[p]
-そして...[p]
-#俺
-「ええぇぇぇぇぇぇぇぇ！？！？！？」[p]
-#
-そこに広がっていたのは、[p]
-一瞬で終わってしまった大学時代を、共に過ごしたアパートだった。[p]
-[_tb_end_text]
-
-[mask  time="1000"  effect="fadeIn"  color="0xffffff"  ]
+[bg  time="0"  method="crossfade"  storage="[img-2]mail.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
-[tb_start_text mode=1 ]
-#
-あの後、テレビやスマホでなんども確認したが、[p]
-どうやら今日は2021年の6月1日で間違いないようだった。[p]
-記憶も徐々に蘇ってくる。[p]
-#俺
-「確か飲みすぎて死にそうになってたんだよな...」[p]
-#
-取引先での出来事や、死にかけた公園の景色もよく覚えている。[p]
-そこである予感が頭によぎる、[p]
-記憶を引き継いで過去に戻る、これほど人類が夢見たシチュエーションはないだろう。[p]
-自然と口角が上がっていく。[p]
-さぁ、今からなにをしようか。[p]
-分かり切ってる、あれしかない。[p]
-競馬？預言者？なんだってできるはず。[p]
-今から数年後までの記憶があるんだ。[p]
-何をすれば良いか非常に明白だった。[p]
+[chara_show  name="長文"  time="0"  wait="true"  left="227"  top="187"  width="12"  height="14"  reflect="false"  storage="chara/10/[img-3]siro.jpg"  ]
+[chara_show  name="短文"  time="0"  wait="true"  left="274"  top="166"  width="11"  height="12"  reflect="false"  storage="chara/11/[img-3]siro.jpg"  ]
+[glink  color="orange"  storage="8m_4w_mail.ks"  size="20"  text="戻る"  x="13"  y="554"  width=""  height=""  _clickable_img=""  target="*back"  ]
+[tb_ptext_show  x="40"  y="119"  size="32"  color="0x000000"  time="0"  text="咲"  anim="false"  face="x12y16pxMaruMonica"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="40"  y="219"  size="32"  color="0x000000"  time="0"  text="伝通"  anim="false"  face="x12y16pxMaruMonica"  edge="undefined"  shadow="undefined"  ]
+[clickable  storage="8m_4w_mail.ks"  x="1"  y="92"  width="265"  height="90"  target="*メッセージ1"  _clickable_img=""  ]
+[clickable  storage="8m_4w_mail.ks"  x="1"  y="187"  width="267"  height="93"  target="*メッセージ2"  _clickable_img=""  ]
+[s  ]
+*メッセージ1
 
+[tb_show_message_window  ]
+[tb_fuki_start  ]
+[tb_start_text mode=1 ]
+#短文
+花火、17時に駅前集合ね。[r]私、たこ焼きが食べたいわ。[p]
 [_tb_end_text]
 
-[tb_start_text mode=1 ]
-#俺
-「就活だ！！！！！！」[p]
-#
-こうして俺の新たな人生の幕が上がったのであった。[p]
-[_tb_end_text]
+[tb_fuki_stop  ]
+[tb_hide_message_window  ]
+[jump  storage="8m_4w_mail.ks"  target="*mail_home"  ]
+[s  ]
+*メッセージ2
+
+[tb_start_tyrano_code]
+[ptext layer="0" x="289" y="105" text="夏季インターンシップのお知らせ【広告】" size="30" color="black" time="500"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[ptext layer="0" x="289" y="180" text="お世話になります、伝通採用担当の青井です。<br><br>この度、当グループの代表的な制作会社にて夏季のインターンシップの募集を行うことになりました。限られた方のみにご案内している為、ぜひご参加下さい。<br><br>【講義パート】<br>・グループの紹介・PMの仕事とは？<br>【ワークショップパート】<br>・撮影準備のワークをグループに分かれて体験<br>17:00　終了予定<br><br>終了後、希望者は個別に質問受付も可能です！<br><br>―――――――――――――<br>伝通　人事部　採用担当" size="16" color="black" time="500"]
+[_tb_end_tyrano_code]
+
+[l  ]
+[tb_start_tyrano_code]
+[freelayer layer="0"]
+[_tb_end_tyrano_code]
+
+[jump  storage="8m_4w_mail.ks"  target="*mail_home"  ]
+[s  ]
+[s  ]
+*back
 
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
-[jump  storage="6m_1w_home_0.ks"  target="*title"  ]
+[tb_ptext_hide  time="1000"  ]
+[chara_hide_all  time="0"  wait="true"  ]
+[jump  storage="8m_4w_home.ks"  target="*title"  ]
 [s  ]

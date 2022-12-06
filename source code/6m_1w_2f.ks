@@ -2,10 +2,6 @@
 
 *common_start
 
-[tb_eval  exp="f.point_love-=1"  name="point_love"  cmd="-="  op="t"  val="1"  val_2="undefined"  ]
-[tb_eval  exp="f.point_koukoku+=1"  name="point_koukoku"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
-[tb_eval  exp="f.point_meka+=1"  name="point_meka"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
-[tb_eval  exp="f.point_syousya+=1"  name="point_syousya"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [bg  time="1000"  method="crossfade"  storage="[11-2].jpg"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -66,6 +62,7 @@
 広告、メーカー、 商社、いずれも25ポイント以上、そして勉強ポイントはどの業界でも7ポイント以上。[p]
 これらのポイントは3月に発生する志望業界決定イベント時点で満たされていなかった場合、ゲームオーバーとなってしまいます。[p]
 ですのでポイント集めはくれぐれも計画的に行ってください。[p]
+また、はじめてプレイされる方は、比較的難易度のやさしいメーカーを選択していただくことをお勧めします。[p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
@@ -106,6 +103,18 @@
 そう呟いて、俺は駅に向かって歩き出した。[p]
 [_tb_end_text]
 
+[tb_hide_message_window  ]
+[bg  time="1000"  method="crossfade"  storage="[0-0].png"  ]
+[tb_show_message_window  ]
+[tb_start_text mode=1 ]
+#
+ポイントを手に入れた！[r]（広告,メーカー,商社 +１）[r]（♡ -1）[p]
+[_tb_end_text]
+
+[tb_eval  exp="f.point_koukoku+=1"  name="point_koukoku"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="f.point_meka+=1"  name="point_meka"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="f.point_syousya+=1"  name="point_syousya"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="f.point_love-=1"  name="point_love"  cmd="-="  op="t"  val="1"  val_2="undefined"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_hide_message_window  ]
 [jump  storage="6m_2w_1f.ks"  target="*title"  ]

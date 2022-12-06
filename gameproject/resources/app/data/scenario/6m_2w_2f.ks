@@ -2,8 +2,6 @@
 
 *title
 
-[tb_eval  exp="f.point_love-=3"  name="point_love"  cmd="-="  op="t"  val="3"  val_2="undefined"  ]
-[tb_eval  exp="f.point_benkyou+=1"  name="point_benkyou"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [bg  time="1000"  method="fadeIn"  storage="[11-1].jpg"  ]
 [l  ]
 [tb_show_message_window  ]
@@ -85,6 +83,19 @@
 （よし、俺の輝かしいみらいのためにもうひと踏ん張り頑張るか！）[p]
 [_tb_end_text]
 
+[tb_hide_message_window  ]
+[bg  time="1000"  method="crossfade"  storage="[0-0].png"  ]
+[tb_show_message_window  ]
+[tb_start_text mode=1 ]
+#
+ポイントを手に入れた！[r]（勉強 +１）[r]（♡ -1）[p]
+[_tb_end_text]
+
+[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[tb_hide_message_window  ]
+[chara_hide_all  time="1000"  wait="true"  ]
+[tb_eval  exp="f.point_love-=1"  name="point_love"  cmd="-="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="f.point_benkyou+=1"  name="point_benkyou"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_hide_message_window  ]
 [jump  storage="6m_3w_home.ks"  target=""  ]

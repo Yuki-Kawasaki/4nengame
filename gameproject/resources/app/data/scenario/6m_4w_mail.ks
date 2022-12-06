@@ -30,7 +30,7 @@
 *メッセージ2
 
 [tb_start_tyrano_code]
-[ptext layer="0" x="289" y="105" text="【総合】合同説明会のお知らせ" size="30" color="black" time="500"]
+[ptext layer="0" x="289" y="105" text="合同説明会のお知らせ【総合】" size="30" color="black" time="500"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]

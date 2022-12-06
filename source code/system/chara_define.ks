@@ -35,9 +35,10 @@
 
 ;=========変数宣言部分 
 [iscript] 
-f['point_love']=4; 
+f['point_love']=5; 
 f['point_koukoku']=0; 
 f['point_meka']=0; 
 f['point_syousya']=0; 
 f['point_benkyou']=0; 
+f['name']='こくふ'; 
 [endscript] 

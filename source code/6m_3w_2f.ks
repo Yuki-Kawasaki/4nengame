@@ -118,8 +118,16 @@
 [s  ]
 *mailmodori
 
-[bg  time="1000"  method="crossfade"  storage="[0-12].png"  ]
+[tb_hide_message_window  ]
+[bg  time="1000"  method="crossfade"  storage="[0-0].png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
+[tb_show_message_window  ]
+[tb_start_text mode=1 ]
+#
+（♡ -3）[p]
+[_tb_end_text]
+
+[bg  time="1000"  method="crossfade"  storage="[0-12].png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
@@ -182,7 +190,9 @@
 
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [bg  time="1000"  method="crossfade"  storage="[1-1].jpg"  ]
+[tb_hide_message_window  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
+[tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #俺
 「また、ここか」[p]
@@ -1092,3 +1102,17 @@
 俺の地雷付きの就職活動が、本格的にスタートした！！！[p]
 [_tb_end_text]
 
+[tb_hide_message_window  ]
+[bg  time="1000"  method="crossfade"  storage="[0-0].png"  ]
+[tb_show_message_window  ]
+[tb_start_text mode=1 ]
+#
+ポイントを手に入れた！[r]（♡ +2）[p]
+[_tb_end_text]
+
+[tb_eval  exp="f.point_love+=2"  name="point_love"  cmd="+="  op="t"  val="2"  val_2="undefined"  ]
+[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[tb_hide_message_window  ]
+[chara_hide_all  time="1000"  wait="true"  ]
+[jump  storage="6m_4w_home.ks"  target="*title"  ]
+[s  ]

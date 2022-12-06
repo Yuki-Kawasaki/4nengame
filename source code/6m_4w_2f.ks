@@ -1,6 +1,6 @@
 [_tb_system_call storage=system/_6m_4w_2f.ks]
 
-[bg  time="1000"  method="crossfade"  ]
+[bg  time="1000"  method="crossfade"  storage="[0-13].jpg"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #俺
@@ -21,7 +21,9 @@
 静かな決意と共に、予定通りの電車に乗り込んだ。[p]
 [_tb_end_text]
 
-[bg  time="1000"  method="crossfade"  ]
+[tb_hide_message_window  ]
+[bg  time="1000"  method="crossfade"  storage="[5-1].jpg"  ]
+[tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
 待ち合わせ場所に着くと、すでに咲が前髪をいじりながら待っていた。[p]
@@ -151,16 +153,19 @@
 「じゃあとりあえず映画館向かうか」[p]
 [_tb_end_text]
 
-[bg  time="1000"  method="crossfade"  ]
+[tb_hide_message_window  ]
+[bg  time="1000"  method="crossfade"  storage="[0-16].jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="[0-17].jpg"  ]
+[tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #俺
-「（映画館に着いたのはいいものの、まだ何を見るか決め兼ねてるんだよな）」[p]
-「（サイコホラーで有名なナシ・アスター監督の最新作か、SNSで大バズりしてる学園恋愛物か）」[p]
+（映画館に着いたのはいいものの、まだ何を見るか決め兼ねてるんだよな）[p]
+（サイコホラーで有名なナシ・アスター監督の最新作か、SNSで大バズりしてる学園恋愛物か）[p]
 
 [_tb_end_text]
 
-[glink  color="blue"  storage="scene1.ks"  size="20"  x="250"  y="150"  width="400"  target="*14"  text="サイコホラー"  ]
-[glink  color="blue"  storage="scene1.ks"  size="20"  x="250"  y="250"  width="400"  target="*15"  text="学園恋愛物"  ]
+[glink  color="blue"  storage="6m_4w_2f.ks"  size="20"  x="250"  y="150"  width="400"  target="*3"  text="サイコホラー"  ]
+[glink  color="blue"  storage="6m_4w_2f.ks"  size="20"  x="250"  y="250"  width="400"  target="*4"  text="学園恋愛物"  ]
 [s  ]
 *3
 
@@ -247,7 +252,10 @@
 [_tb_end_text]
 
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[tb_hide_message_window  ]
+[bg  time="1000"  method="crossfade"  storage="[0-18].png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
+[tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #俺
 「お待たせ〜」[p]
@@ -282,7 +290,7 @@
 [tb_start_text mode=1 ]
 #俺
 「すまん...」[p]
-「（どうして俺はいつもこう...）」[p]
+（どうして俺はいつもこう...）[p]
 #
 仕事での嫌な記憶が蘇りそうになる。[p]
 片手には一人分のドリンクと、一人分のチケット。[p]
@@ -385,7 +393,7 @@
 殺戮兵器と化したヒロインからなんとか主人公の男が逃げ切り、映画は無事エンドロールを迎えた。[p]
 [_tb_end_text]
 
-[bg  time="1000"  method="crossfade"  ]
+[bg  time="1000"  method="crossfade"  storage="[0-16].jpg"  ]
 [tb_start_text mode=1 ]
 #咲
 「怖かった …」[p]
@@ -466,10 +474,10 @@
 「ふふっ」[p]
 [_tb_end_text]
 
-[tb_start_text mode=1 ]
+[tb_start_tyrano_code]
 #咲
-「じゃあ、（主人公の名前）君は監督かしら？」[p]
-[_tb_end_text]
+「じゃあ、[emb exp ="f.name"]君は監督かしら？」[p]
+[_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #俺
@@ -573,3 +581,16 @@
 季節限定のフレーバーの話を一生懸命教えてくれる彼女の声を聞きながら、ほの暗い映画館を出て、人波に向かうエスカレーターを下った。[p]
 [_tb_end_text]
 
+[tb_hide_message_window  ]
+[bg  time="1000"  method="crossfade"  storage="[0-0].png"  ]
+[tb_show_message_window  ]
+[tb_start_text mode=1 ]
+#
+ポイントを手に入れた！[r]（♡ +2）[p]
+[_tb_end_text]
+
+[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[tb_hide_message_window  ]
+[chara_hide_all  time="1000"  wait="true"  ]
+[tb_eval  exp="f.point_love+=2"  name="point_love"  cmd="+="  op="t"  val="2"  val_2="undefined"  ]
+[jump  storage="7m_1w_1f.ks"  target=""  ]

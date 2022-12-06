@@ -27,7 +27,7 @@
 
 [chara_hide_all  time="0"  wait="true"  ]
 [tb_ptext_hide  time="0"  ]
-[jump  storage="w1_syukatu.ks"  target=""  ]
+[jump  storage="7m_2w_f_syukatu.ks"  target=""  ]
 *彼女
 
 [chara_show  name="確認画面"  time="0"  wait="true"  storage="chara/2/4664.jpg"  width="471"  height="402"  left="270"  top="148"  reflect="false"  ]
@@ -39,7 +39,7 @@
 
 [chara_hide_all  time="0"  wait="true"  ]
 [tb_ptext_hide  time="0"  ]
-[jump  storage="w1_deto.ks"  target=""  ]
+[jump  storage="7m_2w_1f.ks"  target=""  ]
 *勉強会
 
 [chara_show  name="確認画面"  time="0"  wait="true"  storage="chara/2/4664.jpg"  width="471"  height="402"  left="270"  top="148"  reflect="false"  ]
@@ -51,7 +51,7 @@
 
 [chara_hide_all  time="0"  wait="true"  ]
 [tb_ptext_hide  time="0"  ]
-[jump  storage="w1_study.ks"  target=""  ]
+[jump  storage="7m_2w_f_benkyou.ks"  target=""  ]
 *common_iie
 
 [chara_hide  name="確認画面"  time="0"  wait="true"  pos_mode="false"  ]

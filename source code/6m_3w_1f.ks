@@ -2,6 +2,15 @@
 
 *title
 
+[tb_hide_message_window  ]
+[bg  time="1000"  method="crossfade"  storage="[0-0].png"  ]
+[tb_show_message_window  ]
+[tb_start_text mode=1 ]
+#
+（♡ -3）[p]
+[_tb_end_text]
+
+[tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="[7-1].jpg"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
